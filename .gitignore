@@ -1,0 +1,11 @@
+# Nunca versionar informações financeiras de clientes
+*.xlsx
+*.xls
+*.csv
+*.ofx
+*.cnab
+.env
+.env.*
+dados*.json
+*privado*.html
+*.pdf
