@@ -38,3 +38,15 @@ O trecho acima é apenas um **exemplo de formato** (dados fictícios, não usado
 - Transferências internas, aportes e financiamentos precisam ser conciliados antes de uma consolidação contábil.
 - Cardenes Participações precisa de fluxo próprio para indicadores completos.
 - Dados comerciais de serviços não são somados ao caixa bancário.
+
+## Apresentação na Vercel
+
+O `index.html` é um dashboard estático; não exige instalação de pacotes, build ou variáveis de ambiente.
+
+1. Na Vercel, crie um **novo projeto** (não utilize um projeto já existente para outro sistema).
+2. Conecte o GitHub e importe `CaioMigueldeSaRodrigues/holding-familiar`.
+3. Nome do projeto: `holding-familiar`; Framework Preset: `Other`; Root Directory: `./`; build command, install command e output directory: vazios/padrão.
+4. Clique em Deploy. A Vercel publicará apenas o painel sem dados.
+5. Durante a apresentação, clique em **Importar dados** e selecione localmente o JSON privado já preparado.
+
+**Atenção:** o projeto é uma demonstração comercial. O plano Hobby da Vercel permite apenas uso pessoal não comercial; use um plano comercial compatível para o evento. Não adicione dados financeiros ao repositório, nem a um arquivo estático servido publicamente. Não presuma que os dados importados no navegador estejam criptografados ou persistidos: são usados apenas naquela sessão. Para acesso remoto aos números reais por outros usuários, implemente autenticação de servidor e backend privado com autorização.
